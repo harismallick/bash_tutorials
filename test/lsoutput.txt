@@ -1,0 +1,18 @@
+total 6464
+drwxr-xr-x 1 Haris.Mallick 1049089       0 Mar 23 13:22 ./
+drwxr-xr-x 1 Haris.Mallick 1049089       0 Mar 23 13:22 ../
+drwxr-xr-x 1 Haris.Mallick 1049089       0 Mar 23 13:21 bin/
+drwxr-xr-x 1 Haris.Mallick 1049089       0 Mar 23 13:21 cmd/
+drwxr-xr-x 1 Haris.Mallick 1049089       0 Mar 23 13:21 dev/
+drwxr-xr-x 1 Haris.Mallick 1049089       0 Mar 23 13:22 etc/
+-rwxr-xr-x 1 Haris.Mallick 1049089  137744 Feb  1  2022 git-bash.exe*
+-rwxr-xr-x 1 Haris.Mallick 1049089  137232 Feb  1  2022 git-cmd.exe*
+-rw-r--r-- 1 Haris.Mallick 1049089   18765 Feb  1  2022 LICENSE.txt
+drwxr-xr-x 1 Haris.Mallick 1049089       0 Mar 23 13:20 mingw64/
+dr-xr-xr-x 8 Haris.Mallick 1049089       0 Aug  9 19:47 proc/
+-rw-r--r-- 1 Haris.Mallick 1049089  212860 Feb  1  2022 ReleaseNotes.html
+drwxr-xr-x 1 Haris.Mallick 1049089       0 Aug  9 19:46 tmp/
+-rw-r--r-- 1 Haris.Mallick 1049089 1246680 Mar 23 13:21 unins000.dat
+-rwxr-xr-x 1 Haris.Mallick 1049089 3111280 Mar 23 13:18 unins000.exe*
+-rw-r--r-- 1 Haris.Mallick 1049089   24191 Mar 23 13:21 unins000.msg
+drwxr-xr-x 1 Haris.Mallick 1049089       0 Mar 23 13:21 usr/

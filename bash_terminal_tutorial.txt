@@ -1,0 +1,107 @@
+Source for all the notes taken downstream:
+https://www.youtube.com/watch?v=oxuRxtrO2Ag
+
+The terminal functions discussed below have different parameters that can be applied.
+These parameters and how to use them can be access by using the '[command] --help' feature built into the terminal. 
+Otherways of accessing how to utilise particular bash commands:
+    - apropos [query]: This command will return a list of commands that can used to manipulate or work with the query given.
+    - man [query]: This will return the detailed manual for how to use the command given as a query. However, not all commands have a manual so man command may not work.
+
+- The 'ls' command
+    - It is short for 'list' and allows one to list all the files and subdirectories in a particular directlry.
+
+- The general look of the bash terminal:
+    - It will always list the name of the machine the terminal is linked to.
+    - This is useful as you can ssh connect to other machines, so knowing which terminal is linked to which machine is important.
+    - Can have multiple terminals open at the same time.
+    - the '~' tilde always represents the home folder. This symbol is only seen in a linux or mac-based terminal. Not on windows.
+    - The '$' symbol means you are connected as a regular user and do not have admin access to the machine.
+    - Would need to re-open the terminal with admin credential at which point you will have 'root' access.
+
+- The 'pwd' command
+    - It stands for print working directory.
+    - Will list the current directory you are in.
+
+- Difference between relative path and absolute path
+    - The relative path of a directory or file is how you would access it relative to the directory you are in currently.
+    - The absolute path of a directory or file is how you would access it from the root directory on the machine.
+    - Depending on the situation, it might be easier to access a directory using one way over the other.
+
+- The 'cd' command
+    - This command is used to 'change directory'.
+    - This command has an autocomplete feature that can be accessed by writing the first few letters of the directory
+      you are trying to access, then pressing the tab key to allow for autocompletion.
+    - If you press enters after just writing a few letters, bash will return a list of directories starting with those letters.
+    - You can then be more specific with the autocomplete next time.
+    - cd .. allows you to go up one level in the directory tree.
+    - cd on its own or cd ~ will take you to the home directory.
+
+- 'pushd' and 'popd' commands
+    - The pushd command allows you to quickly switch to another directory by creating a stack of directories.
+    - popd will switch back to the previous directory that was in the directories stack.
+
+- 'file' command
+    - UNIX based terminals do not print the file extensions next to the name. So it can be difficult to decipher what type of data is stored in the file.
+    - This information can be accessed using the 'file' command.
+
+- 'locate' command to search for specific files
+    - The 'locate' command returns a list of files that contain the given kwarg in their name.
+    - This command creates a database of filenames and directories once per day by default.
+    - So if you create a bunch of new files and were trying to use the locate function a few minutes later, it might not work.
+    - You can manually invoke a database update using the command: sudo updatedb
+    - Running this command will require admin priviledges.
+
+- 'which' command
+    - This command can help you locate the other terminal commands that are currently installed on the computer.
+    - Once you know the location, you can then change path to its directory and execute the command.
+
+- The 'history' command
+    - You can always look at last few commands that you executed in the terminal by using the up arrow.
+    - However, you can also access a list of the last 1000 commands that were executed in terminal by using the history command
+
+- The 'mkdir' command
+    - This command allows you to make a new directory based on the relative path or absolute path given.
+
+- The 'touch' command
+    - Update the access and modification times of each FILE to the current time.
+    - If a file with the given name does not exist, then the touch command will create an empty file of that name.
+
+- The 'mv' command
+    - mv stands for 'move' and this allows you to move the contents of one file into another file.
+    - In doing so, the first file is deleted from the directory.
+    - The syntax is mv [file_to_move] [file_to_move_to]
+
+- The 'rm' command
+    - This command permanently deletes the specified file.
+    - if used with the -r argument, rm will recursively remove all the files (or specified file extensions) from the directory.
+    - As the files are permanently deleted, should be very careful with using the rm and rm -r functions.
+    - 'rmdir' removes an entire directory (folder).
+    - 'rmdir *' will remove all subdirectories in the current directory. But files that are outside of these subdirectories will be spared.
+
+- The 'cat' command
+    - cat is short for concatenate. This command can be used to concatenate different files into one file.
+    - It is a multipurpose command that can be used in other ways too.
+    - cat >> [file] will open up the file and allow you to add text to the file. Then press ctrl + D to exit the command.
+    - '>' is like 'w' in python. It will set cursor to the beginning of the file.
+    - '>>' is like 'a' and it will set the cursor to the end of the file so previously existing data is not overridden.
+    - cat [file] can be used to read the file and print the contents in terminal.
+
+- The 'more' and 'less' commands
+    - These commands allow you to display the contents of a file in chunks or line-by-line respectively in the terminal.
+    - less allows you to scroll back up and not just down, and you can search for specific key words as well if you are navigating a large file.
+
+- The 'nano' text editor command
+    - This will open the nano text editor.
+    - At the bottom of the editor, there are specific ctrl + letter commands for doing specific things.
+    - The ctrl + O commands lets you write the changes made to the file.
+    - The ctrl + X commands lets you exit the nano text editor back to the terminal.
+
+- Writing all files in a directory to a text file
+    - ls -al / > lsoutput.txt 
+    - This command should output the contents of the root directory to the specified text file.
+
+- 'sudo' command for admin priviledges
+    - This command will allow you to make changes to the root directory. Its correct pronunciation is 'suu-doo'.
+    - 'sudo -s' will let you change to the root user.
+    - root priviledges should be used sparingly as inadvertent changes made as root user can be permanent and open the machine to malware.
+    
