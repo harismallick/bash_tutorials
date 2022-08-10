@@ -1,0 +1,3 @@
+The notes written here have been taken from the following tutorial video: https://youtu.be/e7BufAVwDiM
+
+- When creating a file which contains lines of code that are expected to be executed in Bash, they should be saved with a '.sh' extension.

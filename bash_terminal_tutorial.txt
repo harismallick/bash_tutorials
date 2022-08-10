@@ -127,4 +127,5 @@ Otherways of accessing how to utilise particular bash commands:
     - ctrl + C - this terminates any process or code that might be running in the terminal.
     - 'killall [application]' will terminate any user initiated process. Can terminate chrome, firefox, etc this way if they are not behaving correctly.
     - ctrl + D - this command kills the terminal. Can also write 'exit' in terminal which achieves the same thing.
-    
+
+- cat /etc/shells - This command lists all the shells that are installed in a UNIX-based machine.
