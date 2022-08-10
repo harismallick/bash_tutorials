@@ -54,6 +54,7 @@ Otherways of accessing how to utilise particular bash commands:
 - 'which' command
     - This command can help you locate the other terminal commands that are currently installed on the computer.
     - Once you know the location, you can then change path to its directory and execute the command.
+    - This command can also be used to locate any application that is installed on the computer.
 
 - The 'history' command
     - You can always look at last few commands that you executed in the terminal by using the up arrow.
@@ -104,4 +105,26 @@ Otherways of accessing how to utilise particular bash commands:
     - This command will allow you to make changes to the root directory. Its correct pronunciation is 'suu-doo'.
     - 'sudo -s' will let you change to the root user.
     - root priviledges should be used sparingly as inadvertent changes made as root user can be permanent and open the machine to malware.
+    
+- File permissions and priviledges
+    - When using the '-l' parameter with ls, you can see a detailed overview of the files and subdirectories with a directory.
+    - In this view, you will see something like 'rwx-r--r--'.
+    - r is for read, w is for write and x is if the file contains executable code. These letters represent the level of access a user has to that file.
+    - The group of letters after the first hyphen are for the user; the second group of letters represent permissions for a group; 
+      and third group of letters represent persmissions for everyone that has access to the machine.
+    - Each of these 'groups' of letters is represented within 7 bits. 4 bits is for read, 2 bits is for write and 1 bit is for code execution permission.
+    - You can use the 'chmod' (change mode) command to change, or assign, read-write-execute priviledges for users.
+    - This can be done by 'chmod num1num2num3 [file]'.
+    - If the three numbers you write are 777, that means you are giving read-write-execute privilidges to everyone.
+    - 754 would mean all privilidges are only given to the root user, while read-write given to a specific group, and only read priviledges to everyone.
+
+- Directory priviledges
+    - These are slightly different that file priviledges.
+    - To give someone 'read' access to the directory, you also need to give them executable access.
+    - So the chmod number combination here would be 755, rather than 644, for giving all rights to root user and only read access to everyone else.
+
+- Useful terminal shortcuts:
+    - ctrl + C - this terminates any process or code that might be running in the terminal.
+    - 'killall [application]' will terminate any user initiated process. Can terminate chrome, firefox, etc this way if they are not behaving correctly.
+    - ctrl + D - this command kills the terminal. Can also write 'exit' in terminal which achieves the same thing.
     
