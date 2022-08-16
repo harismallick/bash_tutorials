@@ -1,6 +1,9 @@
 Source for all the notes taken downstream:
 https://www.youtube.com/watch?v=oxuRxtrO2Ag
 
+Tips also taken from:
+https://ubuntu.com/tutorials/command-line-for-beginners#1-overview 
+
 The terminal functions discussed below have different parameters that can be applied.
 These parameters and how to use them can be access by using the '[command] --help' feature built into the terminal. 
 Otherways of accessing how to utilise particular bash commands:
@@ -130,5 +133,10 @@ Otherways of accessing how to utilise particular bash commands:
 
 - cat /etc/shells - This command lists all the shells that are installed in a UNIX-based machine.
 
-2022/08/16 16:58:49 from a given argument
-2022/08/16 17:31:40 from a given argument
+- The 'pipe (|)' character in UNIX based systems:
+    - This letter can be placed in between two bash commands to link the output of one (STDOUT) as the input of another (STDIN).
+    - This can be done for more than two commands. Multiple commands can be linked together this way in one line of code.
+    - Eg: ls ~ | wc -l
+    - This one line code lists all the files + directories in the home folder, then counts the number of items in the list (wc - word count).
+    - Without piping, you would have to save the ls output in a text file. Then run the word count command on the text file generated. After that you'd delete the text file.
+    - All this is simplified using piping.

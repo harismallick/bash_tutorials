@@ -10,6 +10,13 @@ https://stackoverflow.com/questions/8967902/why-do-you-need-to-put-bin-bash-at-t
 - It tells the UNIX machine which iterpreter to use.
 - The '#!' combination is known as a 'shebang'.
 
+- How to execute a shell script in terminal:
+    - you need to specify the directory and then the .sh file in there that you wish to execute.
+    - Majority of instances, you will already be in the directory where the .sh file is, so the command is './[script_name].sh'.
+    - The '.' here represents the current directory. This is the relative way of executing the script.
+    - You can also give the absolute path to execute it. Eg: absolute path/[script_name].sh
+    
+
 Moving on to the interactive tasks that are part of this bash scripting tutorial:
 
 1. Print 'Hello World' in the terminal from a shell script.
@@ -17,6 +24,24 @@ Moving on to the interactive tasks that are part of this bash scripting tutorial
     - It allows you to print whatever string (within "") follows echo.
 
 2. Redirect to a file
-    - Whichever 
-2022/08/16 16:58:49 from a given argument
-2022/08/16 17:31:40 from a given argument
+    - The output of any bash command can be redirected to an output file using the '>' or '>>' symbol followed by the filename.
+    - > sets the cursor to the beginning of the file, while >> adds the cursor to the end of the file so the previous writes are not overwritten.
+
+3. Multi-line commenting
+    - : '
+        What if you had many lines that you were using to convey to the users what the downstream lines of code are meant to do.
+        Rather than commenting each line of text individually, you can use multi-line commenting, which works very similar to Python.
+        You can place all the text within quotes that are followed by a colon. This is the python equivalent of using """ text """
+        '
+    - Heredoc delimiter:
+        - Normal commented lines of text are not printed in the terminal when the shell script is run.
+        - But what if you wanted certain text to be displayed in the terminal as the script runs?
+        - You can use Heredoc to achieve this.
+        - This syntax for this is:
+            cat << [delimiter]
+            write text here
+            [delimiter]
+        - Any text that is present in between the delimiters will be printed in the terminal.
+
+4. Conditional statements:
+    - 
