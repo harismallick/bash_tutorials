@@ -16,6 +16,11 @@ https://stackoverflow.com/questions/8967902/why-do-you-need-to-put-bin-bash-at-t
     - The '.' here represents the current directory. This is the relative way of executing the script.
     - You can also give the absolute path to execute it. Eg: absolute path/[script_name].sh
     
+- The basics of defining and working with variables in bash:
+    - Used the following link for information: https://www.howtogeek.com/442332/how-to-work-with-variables-in-bash/ 
+    - When defining a variable, place NO white space between var name, '=' and var value.
+    - When you wish to access the value stored in a var_name, place $ in front of var_name.
+    - To echo the var_value, place $var_value within "".
 
 Moving on to the interactive tasks that are part of this bash scripting tutorial:
 
@@ -44,4 +49,19 @@ Moving on to the interactive tasks that are part of this bash scripting tutorial
         - Any text that is present in between the delimiters will be printed in the terminal.
 
 4. Conditional statements:
+    - The condition that follows 'if' can be written in [  ] for general conditions.
+    - If you want bash to perform some arithmetic, then place the condition within ((  )).
+    - Always make sure there is white space between the condition and the brackets. Otherwise bash might not process the condition correctly.
+    - In one line, you write 'if' or 'elif' with the condition. In the next line you write 'then' followed by command you wish to get executed
+        if the condition is met.
+    - There is no need to 'then' in the next line after 'else'. Can just write the code block to be executed after else directly.
+    - The 'And' condition can be added in bash using '&&' when using double brackets. Can also be used as '-a' when using single [  ] brackets to set conditions.
+    - The 'Or' condition can be added using '||' with double brackets and '-0' when using single brackets.
+
+    - Case Statements:
+        - Used the following link to learn the syntax for case statements in Bash:
+        https://linuxize.com/post/bash-case-statement/ 
+
+5. Loops in Bash
     - 
+
